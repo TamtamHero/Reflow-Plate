@@ -4,18 +4,15 @@ cmake_minimum_required(VERSION 3.14)
 set(PROJECT_NAME "REFLOW_PLATE")
 set(BUILD_NUMBER "1")
 
-# Set app name(s) and version(s)
+# Set app name and version
 set(APP_NAME "REFLOW_PLATE")
 set(APP_VERSION_NUMBER "1.0.0")
 
-# Specify the app(s) source code
+# Specify the app source code
 set(APP_SRC_DIRECTORY "${CMAKE_SOURCE_DIR}/src")
 
-# FROM 1.3.0 -- Move common source code to a separate directory
-set(COMMON_CODE_DIRECTORY "${CMAKE_SOURCE_DIR}/Common")
-
-# FROM 1.4.2 -- Set app-side debugging on debug builds
-# Now uses CMake generator expression to extract config type
+# Set app-side debugging on debug builds
+# Uses CMake generator expression to extract config type
 add_compile_definitions($<$<CONFIG:Debug>:DEBUG=1>)
 
 # Set env variable 'PICO_SDK_PATH' to the local Pico SDK
@@ -33,7 +30,7 @@ include(pico_sdk_import.cmake)
 # Name the project
 project(${PROJECT_NAME}
         LANGUAGES C CXX ASM
-        DESCRIPTION "FreeRTOS-based RP2040 applications"
+        DESCRIPTION "FreeRTOS-based RP2040 Reflow Plate"
 )
 
 # Initialise the Pico SDK
