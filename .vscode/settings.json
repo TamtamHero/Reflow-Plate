@@ -1,0 +1,6 @@
+{
+    "settings": {
+		"C_Cpp.files.exclude": {
+			"pico-sdk/lib/**": true,
+		}
+}
