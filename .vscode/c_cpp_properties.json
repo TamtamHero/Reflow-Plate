@@ -1,0 +1,19 @@
+{
+    "env": {},
+    "configurations": [
+        {
+            "name": "Linux",
+            "intelliSenseMode": "linux-gcc-arm",
+            "includePath": [
+                "pico-sdk/src/**",
+                "FreeRTOS-Kernel/**"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "compileCommands": "build/compile_commands.json",
+            "compilerPath": ""
+        }
+    ],
+    "version": 4
+}
