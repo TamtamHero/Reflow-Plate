@@ -57,3 +57,5 @@ target_include_directories(FreeRTOS PUBLIC
 
 # Include the apps' source code
 add_subdirectory(${APP_SRC_DIRECTORY})
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS, on)
