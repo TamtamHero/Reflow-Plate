@@ -1,6 +1,6 @@
 # Reflow Plate
 
-An RP2040/FreeRTOS based reflow plate project, build on top of https://github.com/smittytone/RP2040-FreeRTOS.
+An RP2040/FreeRTOS based reflow plate project, built on top of https://github.com/smittytone/RP2040-FreeRTOS.
 
 ## Prerequisites
 
